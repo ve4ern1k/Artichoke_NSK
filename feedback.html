@@ -1,0 +1,140 @@
+<!doctype html />
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Artichoke_NSK</title>
+        <link href="feedback.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
+        <link href="1.png" rel="icon" type="image/png" />
+    </head>
+    <body>
+        <header>
+            <div id="headerInfo">
+                <input id="search" type="text" placeholder="Поиск"/>
+                <label id="contacts" style="white-space: nowrap;">8-913-000-13-65<br>г. Новосибирск, Ленина 3</label>
+            </div>
+            <div>
+                <canvas id="canvas1">
+                    Version Error, please change your tools.
+                </canvas>
+                <script>
+                    var canv1 = document.getElementById('canvas1'),
+                        ctx = canv1.getContext('2d');
+
+                    canv1.width = 8000
+                    ctx.fillStyle = '#EEEEEE';
+                    ctx.fillRect(0, 0, 8000, 100);
+
+                    ctx.fillStyle = '#CBB5B5';
+                    ctx.fillRect(0, 50, 8000, 60);
+
+                    ctx.beginPath();
+                    ctx.arc(canvas1.width / 44, canvas1.height / 2, 50, 0, Math.PI * 2);
+                    ctx.fillStyle = '#838A6B';
+                    ctx.strokeStyle = '#CBB5B5';
+                    ctx.lineWidth = 30;
+                    ctx.stroke();
+                    ctx.fill();
+
+                    var img = new Image();
+                    img.src = "1.png";
+                    img.onload = function() {
+                        ctx.drawImage(img, canvas1.width / 44 - 33, canvas1.height / 2 - 33, 66, 66);
+                    };
+                    ctx.drawImage(canv1, 0, 0);
+                </script>
+            </div>
+            <ul id="headerButtons">
+                <li class="headerButtonsStyle shopName"><a class="headerLinks" href="eight_march.html">Artichoke_NSK</a></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="#">Адреса</a></li>
+                <li class="headerButtonsStyle"><abbr title="Запрещённая в России организация"><a class="headerLinks" href="https://instagram.com/">Instagram</a></abbr></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="feedback.html">Отзывы</a></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="personalAccount.html" style="white-space: nowrap;">Личный кабинет</a></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="bascket.html">Корзина</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="feedback">
+                <div class="oneFeedback">
+                    <a href="personalAccount.html"><img id="userImg" src="алина.jpg" /></a>
+                    <div class="columnFeedback">
+                        <a href="personalAccount.html" style="margin-top: 40px; font-size: 22;"><span>Алина Захарчук</span></a>
+                        <span style="margin-top: 25px;">Заказывала 2 букета. Цветы огонь! Спасибо вам за вашу работу.</span>
+                        <div class="feedbackImages" style="margin-top: 20px;">
+                            <img class="feedbackImage" src="букет4.jpg"/>
+                            <img class="feedbackImage" src="букет5.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneFeedback">
+                    <a href="personalAccount.html"><img id="userImg" src="алина.jpg" /></a>
+                    <div class="columnFeedback">
+                        <a href="personalAccount.html" style="margin-top: 40px; font-size: 22;"><span>Алина Захарчук</span></a>
+                        <span style="margin-top: 25px;">Заказала букеты по рекомендации пользователя сверху. Не пожалела.</span>
+                        <div class="feedbackImages" style="margin-top: 20px;">
+                            <img class="feedbackImage" src="букет4.jpg"/>
+                            <img class="feedbackImage" src="букет5.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneFeedback">
+                    <a href="personalAccount.html"><img id="userImg" src="алина.jpg" /></a>
+                    <div class="columnFeedback">
+                        <a href="personalAccount.html" style="margin-top: 40px; font-size: 22;"><span>Алина Захарчук</span></a>
+                        <span style="margin-top: 25px;">Оцените пельмени</span>
+                        <div class="feedbackImages" style="margin-top: 20px;">
+                            <img class="feedbackImage" src="пельмени.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerGrid">
+                <div class="footerBlock" style="grid-column: 2; grid-row: 2;">
+                    <ul class="footerElement">
+                        <li class="footerLink blockHeading">Клиентам:</li>
+                        <li class="footerLink"><a href="#">О нас</a></li>
+                        <li class="footerLink"><a href="#">Услуги</a></li>
+                        <li class="footerLink"><a href="#">Оплата</a></li>
+                        <li class="footerLink"><a href="#">Доставка</a></li>
+                        <li class="footerLink"><a href="#">Блог</a></li>
+                        <li class="footerLink"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footerBlock" style="grid-column: 3; grid-row: 2;">
+                    <ul class="footerElement">
+                        <li class="footerLink blockHeading">Букеты:</li>
+                        <li class="footerLink"><a href="#">Акции</a></li>
+                        <li class="footerLink"><a href="#">Сборные букеты</a></li>
+                        <li class="footerLink"><a href="#">Свадебные букеты</a></li>
+                        <li class="footerLink"><a href="#">Корзины с цветами</a></li>
+                        <li class="footerLink"><a href="#">Тематические букеты</a></li>
+                    </ul>
+                </div>
+                <div class="footerBlock" style="grid-column: 4; grid-row: 2;">
+                    <ul class="footerElement">
+                        <li class="footerLink blockHeading">Цветы:</li>
+                        <li class="footerLink"><a href="#">Букеты из сладостей</a></li>
+                        <li class="footerLink"><a href="#">Новогодние букеты</a></li>
+                        <li class="footerLink"><a href="#">Игрушки</a></li>
+                        <li class="footerLink"><a href="#">Декорации</a></li>
+                        <li class="footerLink"><a href="#">Искусственные букеты</a></li>
+                    </ul>
+                </div>
+                <span id="userAgreement" style="grid-column: 5; grid-row: 2;"><a href="#">Пользовательское<br>соглашение</a></span>
+                <div class="footerBlock contactsFooter" style="grid-column: 6; grid-row: 2; display: inline-flex; flex-direction: column;">
+                    <ul class="footerElement" style="margin-top: 21px; margin-right: 10px;">
+                        <li>8-913-000-13-65</li>
+                        <li>г. Новосибирск, ул. Ленина, 3</li>
+                        <li>WhatsApp, Viber, Telegram</li>
+                        <li>8-913-000-13-65</li>
+                    </ul>
+                    <span class="footerElement company">ИП Иванова И.И. 843923, г. Новосибирск</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

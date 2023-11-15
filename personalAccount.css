@@ -1,0 +1,213 @@
+html {
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+body {
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+    min-height: 100%;
+    position: relative;
+    margin: 0;                      /*на будущее: именно это спасает подвал от неприжатости к леву и праву*/
+}
+
+main {
+    padding-bottom: 300px;
+}
+
+footer {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    background-color: #CBB5B5;
+    white-space: nowrap;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+#headerInfo {
+    right: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 40px;
+}
+
+#contacts {
+    grid-column: 9;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin: 6px 10px;
+}
+
+#search {
+    grid-column: 5;
+    max-height: max-content;
+    left: 0;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+
+#canvas1 {
+    height: 150px;
+}
+
+#headerButtons {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    display: inline-flex;
+}
+
+.headerButtonsStyle {
+    margin-right: 50px;
+    margin-left: 10px;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.shopName {
+    background-color: transparent;
+    margin-right: 130px;
+    color: #EEEEEE;
+}
+
+.headerLinks {
+    transition: all 300ms ease;
+}
+
+.headerLinks:hover {
+    color: #CB5858;
+}
+
+.userInfo {
+    display: flex;
+    margin: 200px 0px 60px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar {
+    border-radius: 1000px;
+    width: 12%;
+    border: 5px solid #CBB5B5;
+    transition: all 150ms ease;
+}
+
+#avatar:hover {
+    border: 8px solid #CBB5B5;
+}
+
+.nameAndAge {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto 40px;
+    font-family: "Montserrat";
+    font-size: 18;
+    font-weight: 600;
+}
+
+.nameAndAgeItems {
+    padding: 5px 0px;
+}
+
+.gridButtons {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 0.2fr 2fr 0.2fr 2fr 0.2fr;
+    grid-template-rows: 2fr 0.7fr 2fr;
+    margin-bottom: 70px;
+}
+
+.personalAccountButtons {
+    font-family: "Montserrat";
+    font-size: 18;
+    font-weight: 600;
+    margin: auto;
+    background-color: #CBB5B5;
+    padding: 50px 60px;
+    border-radius: 20px;
+    color: #EEEEEE;
+    transition: all 300ms ease;
+}
+
+.personalAccountButtons:hover {
+    padding: 45px 55px;
+    font-size: 17;
+}
+
+.footerGrid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1.2fr 0.2fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
+}
+
+.footerBlock {
+    align-content: center;
+}
+
+.footerElement {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    font-size: 18;
+    font-weight: 600;
+}
+
+.footerLink {
+    margin: 5px 10px;
+}
+
+.blockHeading {
+    font-family: "Montserrat";
+    font-size: 24;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+#userAgreement {
+    text-align: center;
+    margin-top: 21px;
+    font-family: "Montserrat";
+    font-size: 18;
+    font-weight: 600;
+}
+
+.contactsFooter {
+    text-align: right;
+}
+
+.company {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+}

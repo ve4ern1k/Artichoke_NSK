@@ -1,0 +1,295 @@
+<!doctype html />
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Artichoke_NSK</title>
+        <link href="bouquetDescription.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
+        <link href="1.png" rel="icon" type="image/png" />
+    </head>
+    <body>
+        <header>
+            <div id="headerInfo">
+                <input id="search" type="text" placeholder="Поиск"/>
+                <label id="contacts" style="white-space: nowrap;">8-913-000-13-65<br>г. Новосибирск, Ленина 3</label>
+            </div>
+            <div>
+                <canvas id="canvas1">
+                    Version Error, please change your tools.
+                </canvas>
+                <script>
+                    var canv1 = document.getElementById('canvas1'),
+                        ctx = canv1.getContext('2d');
+
+                    canv1.width = 8000
+                    ctx.fillStyle = '#EEEEEE';
+                    ctx.fillRect(0, 0, 8000, 100);
+
+                    ctx.fillStyle = '#CBB5B5';
+                    ctx.fillRect(0, 50, 8000, 60);
+
+                    ctx.beginPath();
+                    ctx.arc(canvas1.width / 44, canvas1.height / 2, 50, 0, Math.PI * 2);
+                    ctx.fillStyle = '#838A6B';
+                    ctx.strokeStyle = '#CBB5B5';
+                    ctx.lineWidth = 30;
+                    ctx.stroke();
+                    ctx.fill();
+
+                    var img = new Image();
+                    img.src = "1.png";
+                    img.onload = function() {
+                        ctx.drawImage(img, canvas1.width / 44 - 33, canvas1.height / 2 - 33, 66, 66);
+                    };
+                    ctx.drawImage(canv1, 0, 0);
+                </script>
+            </div>
+            <ul id="headerButtons">
+                <li class="headerButtonsStyle shopName"><a class="headerLinks" href="eight_march.html">Artichoke_NSK</a></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="#">Адреса</a></li>
+                <li class="headerButtonsStyle"><abbr title="Запрещённая в России организация"><a class="headerLinks" href="https://instagram.com/">Instagram</a></abbr></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="feedback.html">Отзывы</a></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="personalAccount.html" style="white-space: nowrap;">Личный кабинет</a></li>
+                <li class="headerButtonsStyle"><a class="headerLinks" href="bascket.html">Корзина</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <div id="categoryDescription">
+                <select class="combobox" name="bouquetType" onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option value="eight_march.html">Букеты на 8 марта</option>
+                    <option value="wedding.html">Букеты на свадьбу</option>
+                    <option value="birthday.html" selected="selected">Собрать букет на день рождения</option>
+                </select>
+                <select class="combobox">
+                    <option value="#">Букеты до 3000 рублей</option>
+                    <option value="#">Букеты 3000 - 6000 рублей</option>
+                    <option value="#">Букеты до 6000 рублей</option>
+                    <option value="#">Собрать свой букет</option>
+                </select>
+                <section>
+                    <h1 class="description name">
+                        Букет "Нечто прикольное и нежное"
+                    </h1>
+                    <p class="description">
+                        Начинка букета:  настолько очевидна, что перспективное<br>
+                        планирование представляет собой интересный эксперимент<br>
+                        проверки экономической целесообразности принимаемых<br>
+                        решений. Наше дело не так однозначно, как может<br>
+                        показаться: сложившаяся структура организации говорит<br>
+                        о возможностях направлений прогрессивного развития.<br>
+                        Господа, глубокий уровень погружения требует от нас<br>
+                        анализа соответствующих условий активизации. 
+                    </p>
+                </section>
+            </div>
+            <img id="descriptionImg" src="букет12.jpg" alt="Букет">
+            <div class="selectedPriceInfo">
+                <span class="selectedPriceInfoElement">2700 рублей</span>
+                <div class="selectedPriceInfoElement button">
+                    <span class="buttonElement"><a href="#">Добавить в корзину</a></span>
+                    <img class="buttonElement" src="сумка.png" alt="сумка" style="width: 20px;"/>
+                </div>
+            </div>
+            <span id="similarOffers">Похожие предложения:</span>
+
+
+
+
+
+            <section class="bouquetsGrid">
+                <div class="product" style="grid-column: 1; grid-row: 1;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет1.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">2880 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 2; grid-row: 1;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет2.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">1500 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 3; grid-row: 1;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет3.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">2000 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 4; grid-row: 1;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет4.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">2590 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 5; grid-row: 1;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет5.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">3000 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 1; grid-row: 2;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет6.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">1990 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 2; grid-row: 2;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет7.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">2500 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 3; grid-row: 2;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет8.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">1500 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 4; grid-row: 2;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет9.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">2000 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+                <div class="product" style="grid-column: 5; grid-row: 2;">
+                    <div class="mainBouquetInfo">
+                        <a href="bouquetDescription.html"><img src="букет10.jpg" alt="фото букета" class="bouquetImg"/></a>
+                        <div class="bouquetPrice">
+                            <span class="bouquetText priceInfo" style="grid-column: 1">2190 руб.</span>
+                            <a href="#"><img class="priceInfo" src="сумка.png" alt="сумка" style="width: 20px; grid-column: 2"/></a>
+                        </div>
+                    </div>
+                    <span class="bouquetText bouquetDescription">
+                        Букет из нежных роз,<br>
+                        чего-то там еще и бла<br>
+                        бла бла...<br>
+                    </span>
+                </div>
+            </section>
+
+
+
+
+
+        </main>
+
+        <footer>
+            <div class="footerGrid">
+                <div class="footerBlock" style="grid-column: 2; grid-row: 2;">
+                    <ul class="footerElement">
+                        <li class="footerLink blockHeading">Клиентам:</li>
+                        <li class="footerLink"><a href="#">О нас</a></li>
+                        <li class="footerLink"><a href="#">Услуги</a></li>
+                        <li class="footerLink"><a href="#">Оплата</a></li>
+                        <li class="footerLink"><a href="#">Доставка</a></li>
+                        <li class="footerLink"><a href="#">Блог</a></li>
+                        <li class="footerLink"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footerBlock" style="grid-column: 3; grid-row: 2;">
+                    <ul class="footerElement">
+                        <li class="footerLink blockHeading">Букеты:</li>
+                        <li class="footerLink"><a href="#">Акции</a></li>
+                        <li class="footerLink"><a href="#">Сборные букеты</a></li>
+                        <li class="footerLink"><a href="#">Свадебные букеты</a></li>
+                        <li class="footerLink"><a href="#">Корзины с цветами</a></li>
+                        <li class="footerLink"><a href="#">Тематические букеты</a></li>
+                    </ul>
+                </div>
+                <div class="footerBlock" style="grid-column: 4; grid-row: 2;">
+                    <ul class="footerElement">
+                        <li class="footerLink blockHeading">Цветы:</li>
+                        <li class="footerLink"><a href="#">Букеты из сладостей</a></li>
+                        <li class="footerLink"><a href="#">Новогодние букеты</a></li>
+                        <li class="footerLink"><a href="#">Игрушки</a></li>
+                        <li class="footerLink"><a href="#">Декорации</a></li>
+                        <li class="footerLink"><a href="#">Искусственные букеты</a></li>
+                    </ul>
+                </div>
+                <span id="userAgreement" style="grid-column: 5; grid-row: 2;"><a href="#">Пользовательское<br>соглашение</a></span>
+                <div class="footerBlock contactsFooter" style="grid-column: 6; grid-row: 2; display: inline-flex; flex-direction: column;">
+                    <ul class="footerElement" style="margin-top: 21px; margin-right: 10px;">
+                        <li>8-913-000-13-65</li>
+                        <li>г. Новосибирск, ул. Ленина, 3</li>
+                        <li>WhatsApp, Viber, Telegram</li>
+                        <li>8-913-000-13-65</li>
+                    </ul>
+                    <span class="footerElement company">ИП Иванова И.И. 843923, г. Новосибирск</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
